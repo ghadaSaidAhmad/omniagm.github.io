@@ -1,19 +1,18 @@
 
-title: Radian's Blog
+title: Omnia's Blog
 description: Few posts from time to time
 
 contact:
-  linkedin: http://www.linkedin.com/profile/view?id=69111606
-  github: https://github.com/tabdulradi
-  twitter: http://twitter.com/tamer_radi
-  flickr: http://www.flickr.com/photos/tamer_radi/
-  skype: skype:tamer_radi?call
-  facebook: https://www.facebook.com/tamer.radi
-  googleplus: http://plus.google.com/111772628801266919557
-  youtube: http://youtube.com/Radianization
+  linkedin: https://www.linkedin.com/profile/view?id=196388218
+  github: github.com/OmniaGM
+  twitter: https://twitter.com/Omnia_G
+  skype: skype:omnia_gm?call
+  facebook: https://www.facebook.com/omnia.Gm
+  googleplus: https://plus.google.com/u/1/+OmniaGamal
+  slideShare: http://www.slideshare.net/omniaGm
 
 conf:
-  disqus: tabdulradi
+  disqus: ogamal
 
 navbar:
   links:
@@ -21,8 +20,8 @@ navbar:
       title: Slides
       url: /slides
     - 
-      title: Courses
-      url: /courses
+      title: Projects
+      url: /projects
 
 pygments: true
 permalink: none
