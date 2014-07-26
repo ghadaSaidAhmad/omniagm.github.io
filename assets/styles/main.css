@@ -1,4 +1,137 @@
+/**/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 300px) and (max-width: 991px) {
+	.about-me, .header {
+		text-align: center;
+	}
+	.footer {
+		padding-left: 25% !important;
+		padding-right: 25% !important;
+	}
+	.header--tabs {
+		margin-top: 5% !important;
+		display: inline-block;
+	}
+	.col-xs-9, .col-xs-3, .col-xs-4 {
+		width: 100%
+	}
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.about-me {
+		text-align: left;
+	}
+	
+	.col-xs-9 {
+		width: 58.33333333%;
+	}
+	.col-xs-3 {
+		width: 41.66666667%;
+	}
+	.col-xs-4 {
+		width: 33.33333333%
+	}
+}
+
+
 /*Helpers*/
 .pa10 {
 	padding: 10px;
+}
+.pa20 {
+	padding: 20px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml10 {
+	margin-left: 15px;
+}
+.centered-content {
+	text-align: center;
+}
+.line-height-1-2 {
+	line-height: 1.2em;
+}
+.fs80 {
+	font-size: 80px;
+}
+.h1 {
+	font: normal normal bold 43px/1.2em 'noticia text', serif;
+}
+.h2 {
+	font: normal normal normal 80px/1.2em 'noticia text', serif;
+}
+.h4 {
+	font: normal normal normal 46px/1.2em 'noticia text', serif;
+}
+.h6 {
+	font: normal normal normal 18px/1.2em 'noticia text', serif;
+}
+.fss {
+	font: normal normal normal 12px/1.2em 'open sans', sans-serif;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.white-text {
+	color: #fff;
+}
+/*Overrid Bootstrab*/
+.nav-tabs {
+	border-bottom: none; 
+}
+.nav-tabs > li > a  {
+	border: none;
+	line-height: 14px;
+	font-family: 'noticia text', serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: #c3bfbe;
+	cursor: auto;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	color: #61cfd3 !important;
+	background-color: transparent;
+	border: none !important;
+
+}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus, .nav-tabs > li > a:active {
+	background-color: transparent;
+}
+a:hover, a:focus, a:active  {
+	color: #61cfd3 !important;
+}
+
+/*Basics*/
+body {
+	font-family: 'noticia text', serif;
+	color: #606060;
+}
+.header, .content {
+	background-color: #EAE5E5;
+}
+.footer {
+	color: #fff;
+	background-color: #E83556;
+}
+/*STYLE*/
+.header--tabs {
+	margin-top: 10%
+}
+.icon-circle {
+	font-size: 25px;
+	padding: 10px;
+	border-radius: 50%;
+	background: #61cfd3;
+	color: #fff;
+}
+.about-me {
+	padding-left: 40px;
 }

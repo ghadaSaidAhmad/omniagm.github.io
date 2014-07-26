@@ -1,16 +1,21 @@
 ---
 layout: base
+title: Home
 ---
-<div id="home">
-  <p>
-  	Welcome to my website
-    <br>
-  	you can find below list of technical posts, slides and projects by me.
-  </p>
-  <h2>All Posts</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="tab-pane active" id="home">
+	<div class="row">
+		<div class="col-xs-3 centered-content">
+			<img src="assets/images/avatar.jpg" class="avatar img-circle">
+		</div>
+
+		<div class="col-xs-9 about-me">
+			<h3 class="line-height-1-2 h2"> <strong>Hello,</strong></h3>
+			<h4 class="line-height-1-2 h4">a little about me</h4>
+			<p>
+				I'm a software engineer, interested in front-end development, especially CoffeeScript and Single page app ( using BackboneJS or AngularJS ), and also I am Ruby on Rails and Django developer.
+				<br>
+				I love reading, cooking and travelling to new places with my lovely husband.
+			</p>
+		</div>
+	</div>
 </div>
