@@ -1,0 +1,22 @@
+<div class="post">
+	<div class="row">
+	  <div class="col-xs-5 col-md-5 centered-content">
+	  	<a href="{{ post.url }}">
+	  		<img src="/assets/images/{{post.cover}}" class="post-cover">
+	  	</a>
+	  </div>
+	  <div class="col-xs-7 col-sm-7 col-md-7 post-info">
+	  <div class="clear-both">
+		  <a class="pull-left post-title" href="{{ post.url }}">
+			  <h2>
+			  	{{ post.title }}
+			  </h2>
+			  <p class="fss">
+			  	<span >{{ post.date | date_to_string }}</span>
+			  </p>
+		  </a> 
+	  </div>
+	  <div class="post-body clear-both pa10">{{post.excerpt}}</div>
+	  </div>
+	</div> 
+</div>

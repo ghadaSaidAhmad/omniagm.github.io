@@ -3,46 +3,94 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
     <meta charset="utf-8">
     {% include title.html %}    
     <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      .brand, #brand {
-        font-size: 20px;
-        margin: 0px;
-        padding 0px;
-        line-height: 20px;
-      }
-      .avatar {
-        border-radius: 30px;
-      }
-      @media (min-width: 1200px) { 
-        .container-fluid {
-          padding:  0px;
-        }
-        .wrapper {
-          width: 80%;
-          margin: auto;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendor/elusive-iconfont/css/elusive-webfont.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <script src="/vendor/jquery-1.9.1.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
   </head>
   <body>
-    {% include navbar.html %}
-    <div class="container-fluid wrapper">
-      <div class="row-fluid">
-        <div class="span9">
-          {{ content }}
-          {% include comments.html %}
-        </div>
-        <div class="span3 container-fluid">
-          {% include sidebar.html %}
+    
+    <div class="container">
+      <div class="header pa20">
+        <div class="row">
+          <div class="col-xs-6 col-md-5">
+            <h1 class="ml15 h1">Omnia Gamal</h1>
+            <h6 class="ml15 h6">Front-End Software Engineer</h6>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-7" >
+            {% include navbar.html %}
+          </div>
         </div>
       </div>
-    </div>    
-    <script src="/assets/jquery-1.9.1.min.js"></script>
-    <script src="/assets/bootstrap/js/bootstrap.js"></script>
+      <div class="content pa20">
+        <div class="tab-content">
+          {{content}}
+        </div>
+      </div>  
+      <div class="footer pa20">
+        <div class="row">
+          <div class="footer-contact col-xs-4 col-md-4 col-sm-4">
+            <span class="pull-left icon-circle fa fa-envelope"></span>
+            <div class="pull-left mt5 footer-item-body ">
+              <p class="fss"><strong>Contact</strong></p>
+              <p>
+                <a class="pr5" href="mailto:omnia.gamal1988@gmail.com">
+                  <span class="fa fa-envelope white-text"></span>
+                </a>
+                <a class="pr5" href="skype:omnia_gm?call">
+                <span class="fa fa-skype white-text"></span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-follow-me col-xs-4 col-md-4 col-sm-4">
+            <span class="pull-left icon-circle fa fa-plus"></span>
+            <div class="pull-left mt5 footer-item-body">
+              <p class="fss"><strong>Follow me</strong></p>
+              <p>
+                <a class="pr5" href="https://www.facebook.com/omnia.Gm" target="_blank">
+                  <span  class="fa fa-facebook white-text"></span>
+                </a>
+                <a class="pr5" href="https://twitter.com/Omnia_G" target="_blank">
+                  <span class="fa fa-twitter white-text" ></span>
+                </a>
+                <a class="pr5" href="github.com/OmniaGM" target="_blank">
+                  <span class="fa fa-github white-text" ></span>
+                </a>
+                <a class="pr5" href="https://www.linkedin.com/profile/view?id=196388218" target="_blank">
+                  <span class="fa fa-linkedin white-text" ></span>
+                </a>
+                <a class="pr5" href="https://plus.google.com/u/1/+OmniaGamal" target="_blank">
+                  <span class="fa fa-google-plus white-text" ></span>
+                </a>
+                <a class="pr5" href="http://www.slideshare.net/omniaGm">
+                  <span class="el-icon el-icon-slideshare  white-text"></span>
+                </a>
+                <a class="pr5" href="https://soundcloud.com/omnia-gamal-el-deen-helmi">
+                  <span class="fa fa-soundcloud white-text"></span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-copyright col-xs-4 col-md-4 col-sm-4">
+            <span class="pull-left icon-circle glyphicon glyphicon-copyright-mark"></span>
+            <div class="fss pull-left mt5 footer-item-body ">
+              <p>
+                Developed by Omnia Gamal © 2014,
+              </p>
+              <p>
+                inspired by <a href="http://www.wix.com/website-template/view/html/796?originUrl=http%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fpersonal%2F3&bookName=create-master-new&galleryDocIndex=2&category=personal" target="_blank">Nicola Rider design</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+    
   </body>
 </html>
