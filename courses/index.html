@@ -1,17 +1,15 @@
 ---
 layout: base
-title: Slides
+title: Courses
 ---
-
-<div id="slides">
-	<h1 class="ml10">LATEST SLIDES</h1>
+<div id="courses">
+	<h1 class="ml10">LATEST COURSES</h1>
 	<hr class="hr-line" />
 	<div class="row pa20">
 		<div class="col-md-12">
-			{% for post in site.categories.slides %}
+			{% for post in site.categories.courses %}
 		        {% include post_thumb.html %} 
 			{% endfor %}
-			
 		</div>
 	</div>
 </div>

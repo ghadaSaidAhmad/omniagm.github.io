@@ -25,6 +25,9 @@ navbar:
     - 
       title: Projects
       url: /projects
-
+    -
+      title: Courses
+      url: /courses
+      
 pygments: true
 permalink: none

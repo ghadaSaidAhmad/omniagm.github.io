@@ -3,21 +3,12 @@ layout: base
 title: Projects
 ---
 <div id="projects">
-	<h1 class="ml10">LATEST PROJECTS</h1>
+	<h1 class="ml10">LATEST OPEN-SOURCE PROJECTS</h1>
 	<hr class="hr-line" />
 	<div class="row pa20">
 		<div class="col-md-12">
-			{% for post in site.categories.project %}
-			    {% capture pattern %}{% cycle 'left', 'right' %}{% endcapture %}
-			    {% if pattern == 'left' %}
-			        {% include post_thumb.html %} 
-			    {% endif%}  
-			{% endfor %}
-			{% for post in site.categories.project %}
-			    {% capture pattern %}{% cycle 'left', 'right' %}{% endcapture %}
-			    {% if pattern == 'left' %}
-			        {% include post_thumb.html %} 
-			    {% endif %}  
+			{% for post in site.categories.projects %}
+		        {% include post_thumb.html %} 
 			{% endfor %}
 		</div>
 	</div>

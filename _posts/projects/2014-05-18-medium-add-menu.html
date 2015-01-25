@@ -1,45 +1,51 @@
 ---
 layout: post
-title: jQuery plugin to add attachments for MediumEditor plugin
-category: project
+title: 'jQuery plugin to add attachments for MediumEditor plugin'
+category: projects
 cover: medium-add-menu.png
+excerpt: 'This plugin adds "attachment" feature to MediumEditor( a clone of medium.com inline editor toolbar.) This plugin is inspired by Medium-Editor Insert Plugin by Pavel Linkesch and Why ContentEditable is Terrible byNick Santos'
 tags: 
 ---
-<p>I wrote a jQuery plugin for medium-editor (a clone of medium.com), that adds "attachment" feature.</p>
-<p>This plugin adds "attachment" feature to <a href="https://github.com/daviferreira/medium-editor">MediumEditor</a> ( a clone of medium.com inline editor toolbar.) This plugin is inspired by <a href="https://github.com/orthes/medium-editor-insert-plugin">Medium-Editor Insert Plugin</a> by <a href="https://github.com/orthes">Pavel Linkesch</a> and <a href="https://medium.com/medium-eng/why-contenteditable-is-terrible-122d8a40e480">Why ContentEditable is Terrible</a> by <a href="https://medium.com/@nicksantos">Nick Santos</a></p>
-<p>
-The idea behiend this plugin is overriding browser's behavior regarding some specific user action (up-down arrow, select all and delete using backspace or delete keys)</p>
+<div class="fs16">
+  <p>I wrote a jQuery plugin for medium-editor (a clone of medium.com), that adds "attachment" feature.</p>
+  <p>This plugin adds "attachment" feature to <a href="https://github.com/daviferreira/medium-editor"  target="_blank">MediumEditor</a> ( a clone of medium.com inline editor toolbar.) This plugin is inspired by <a href="https://github.com/orthes/medium-editor-insert-plugin" target="_blank">Medium-Editor Insert Plugin</a> by <a href="https://github.com/orthes" target="_blank">Pavel Linkesch</a> and <a href="https://medium.com/medium-eng/why-contenteditable-is-terrible-122d8a40e480" target="_blank">Why ContentEditable is Terrible</a> by <a href="https://medium.com/@nicksantos" target="_blank">Nick Santos</a></p>
+  <p>
+    The idea behiend this plugin is overriding browser's behavior regarding some specific user action (up-down arrow, select all and delete using backspace or delete keys)
+  </p>
 
-<h2>Usage</h2>
-<p>First step load the dependencies</p>
-<pre><code>&lt;link rel="stylesheet" href="medium-editor/css/medium-editor.css"&gt;
-&lt;script src="medium-editor/js/medium-editor.min.js"&gt;&lt;/script&gt;
-&lt;script src="bower_components/jquery/jquery.min.js"&gt;&lt;/script&gt;
-&lt;script src="bower_components/underscore/underscore.js"&gt;&lt;/script&gt;
-</code></pre>
-<p>Second Step</p>
-<pre><code>&lt;link rel="stylesheet" href="medium-add-menu/dist/styles/main.css"&gt;
-&lt;script src="medium-add-menu/dist/scripts/medium-add-menu.js"&gt;&lt;/script&gt;
-&lt;script src="medium-add-menu/dist/scripts/medium-add-image-extension.js"&gt;&lt;/script&gt;
-</code></pre>
-<pre><code>var editor = new MediumEditor('.editable', {
-  excludedActions: ['u', 'h3', 'blockquote'],
-  buttonLabels: 'fontawesome'
-});
-$('.editable').mediumAttachment({
-  editor: editor,
-  extensions:{
-    images: {
-      imagesUploadScript: '&lt;IMAGE_UPLOAD_URL&gt;'
-    }
-  }
-  });
-</code></pre>
-<ul>
-	<li>
-		<a href="http://omniagm.github.io/medium-add-menu/" target="_blank">Demo</a>
-	</li>
-	<li>
-		<a href="https://github.com/OmniaGM/medium-add-menu" target="_blank">Github repo</a>
-	</li>
-</ul>
+  <h2>Usage</h2>
+  <p>First step load the dependencies</p>
+  <pre><code>&lt;link rel="stylesheet" href="medium-editor/css/medium-editor.css"&gt;
+  &lt;script src="medium-editor/js/medium-editor.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/jquery/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="bower_components/underscore/underscore.js"&gt;&lt;/script&gt;
+  </code></pre>
+  <p>Second Step</p>
+  <pre><code>&lt;link rel="stylesheet" href="medium-add-menu/dist/styles/main.css"&gt;
+  &lt;script src="medium-add-menu/dist/scripts/medium-add-menu.js"&gt;&lt;/script&gt;
+  &lt;script src="medium-add-menu/dist/scripts/medium-add-image-extension.js"&gt;&lt;/script&gt;
+  </code></pre>
+  <pre>
+    <code>var editor = new MediumEditor('.editable', {
+      excludedActions: ['u', 'h3', 'blockquote'],
+      buttonLabels: 'fontawesome'
+    });
+    $('.editable').mediumAttachment({
+      editor: editor,
+      extensions:{
+        images: {
+          imagesUploadScript: '&lt;IMAGE_UPLOAD_URL&gt;'
+        }
+      }
+      });
+    </code>
+  </pre>
+  <ul>
+    <li>
+      <a href="http://omniagm.github.io/medium-add-menu/" target="_blank">Demo</a>
+    </li>
+    <li>
+      <a href="https://github.com/OmniaGM/medium-add-menu" target="_blank">Github repo</a>
+    </li>
+  </ul>
+</div>
