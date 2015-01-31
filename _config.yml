@@ -1,18 +1,12 @@
 
-title: Omnia's Blog
-description: Few posts from time to time
+title: Stockedgoodies
+description: Ecommerce site
 
-contact:
-  linkedin: https://www.linkedin.com/profile/view?id=196388218
-  github: github.com/OmniaGM
-  twitter: https://twitter.com/Omnia_G
-  skype: skype:omnia_gm?call
-  facebook: https://www.facebook.com/omnia.Gm
-  googleplus: https://plus.google.com/u/1/+OmniaGamal
-  slideShare: http://www.slideshare.net/omniaGm
+
+
 
 conf:
-  disqus: ogamal
+  disqus: Ayman
 
 navbar:
   links:
@@ -20,14 +14,12 @@ navbar:
       title: Home
       url: /
     - 
-      title: Slides
-      url: /slides
+      title: About
+      url: /About
     - 
-      title: Projects
-      url: /projects
-    -
-      title: Courses
-      url: /courses
+      title: Contact
+      url: /Contact
+    
       
 pygments: true
 permalink: none
